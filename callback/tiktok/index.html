@@ -1,0 +1,13 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex"><title>Cerita Bimo Studio · Login</title>
+<style>body{font-family:system-ui,sans-serif;background:#fbf7ef;color:#1f2430;display:grid;place-items:center;min-height:100vh;margin:0;padding:16px}
+main{max-width:520px;text-align:center}a{color:#2f6f4f}</style></head><body><main>
+<h1>Cerita Bimo Studio</h1><p id="m">Mengalihkan ke YudosOffice di komputer Anda…</p>
+<p><small>Halaman ini hanya meneruskan hasil login TikTok ke aplikasi lokal pemilik (127.0.0.1). Tidak ada data yang disimpan di sini.</small></p>
+<script>
+// Forwards TikTok's login result (code, state) to the owner's local YudosOffice; nothing is stored.
+var target = 'http://127.0.0.1:8000/api/social/tiktok/callback' + location.search;
+var a = document.createElement('a'); a.href = target; a.textContent = 'Lanjutkan ke YudosOffice';
+document.getElementById('m').after(a);
+location.replace(target);
+</script></main></body></html>
